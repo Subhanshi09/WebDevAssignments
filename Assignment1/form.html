@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>My Bio Data</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="FirstName">FirstName:</label>
+            <input type="text" placeholder="First Name">
+            <label for="LastName">LastName</label>
+            <input type="text" placeholder="Last Name">
+            <br><br><br>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="male">
+            
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="female">
+
+            <label for="gender">Other:</label>
+            <input type="radio" name="gender" id="others">
+            <br><br>
+            <label for="Dateofbirth">Date of Birth:</label>
+            <input type="date" >
+            <br><br>
+            <label for="Email">E-Mail:</label>
+            <input type="email" placeholder="Enter Your Email">
+            <br><br>
+            <label for="PhoneNo">Phone:</label>
+            <input type="phone" placeholder="+91">
+            <br><br>
+            <label for="Height">Height</label>
+            <input type="number" placeholder="Height in Feet">
+            <br><br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="School Name">School Name:</label>
+            <input type="text" placeholder="School Name" >
+            <br><br>
+            <label for="Class">Class:</label>
+            <input type="text" placeholder="Enter Class">
+            <br><br>
+            <label for="Stream">Stream:</label>
+            <select id="Stream">
+                <option value>Stream</option>
+                <option value="Non Med">Non Med</option>
+                <option value="Med">Med</option>
+            </select>
+            <br><br>
+            <label for="marksheet">Marksheet:</label>
+            <input type="file" placeholder="Choose File" required>
+        </fieldset><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
