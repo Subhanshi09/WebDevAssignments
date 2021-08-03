@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: salmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 20px 10px;
+}
+ul button{
+    height: 50px;
+    margin-top: 10px;
+}
+li{
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+@media screen and (max-width:922px) {
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+span{
+    font-size: 2rem;
+    color: white;
+    margin-left: 40px;
+}
+
+
+li:hover{
+    background-color:#f27059;
+    border-radius: 10px;
+}
+button{
+    background-color: #f27059;
+    border: salmon;
+    width: 80px;
+    padding: 0;
+    color: white;
+    border-radius:10px ;
+    cursor: pointer;
+    
+}
+
+div{
+    background-image: url('https://images.unsplash.com/photo-1467453678174-768ec283a940?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+    width:1000px;
+    border-radius: 16px;
+    background-color: #16384C;
+    display: flex;
+    min-height: 500px;
+    margin:40px auto;
+    border:2px solid whitesmoke;
+    animation: changeimage 11s infinite;
+    animation-delay: 1s;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+@keyframes changeimage{ 
+    25%{
+        background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+        width: 1000px;
+        height: 1000px;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-repeat: no-repeat;
+        width: 1000px;
+        height: 1000px;
+        background-image: url('https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+    }
+    75%{
+        width: 1000px;
+        height: 1000px;
+        background-image: url('https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxmb29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+        width: 1000px;
+        height: 1000px;
+        background-repeat: no-repeat;
+    }
+}
+.forheading{
+    text-align: center;
+}
+
+#cards{
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+figure{
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    text-align:left;
+    transition: 100ms;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+figure:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+figure img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+figcaption{
+    padding: 10px;
+}
+figcaption h2:nth-of-type(2){
+    font-weight: lighter;
+    font-size: 15px;
+}
+figcaption p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+.a{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.special{
+    margin-top: 50px;
+    padding: 10px;
+    border: 3px solid salmon;
+    border-radius: 10px;
+
+}
+
